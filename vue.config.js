@@ -1,9 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/<repo名稱>/'
-        : '/'
-  }
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/Vue-Component-Knob-Checkbox/'
+    : '/'
+
 })
