@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '@/components/HomePage.vue'
-import CheckBoxPage from '@/components/CheckBoxPage.vue'
-import KnobPage from '@/components/KnobPage.vue'
-import HeaderComponent from '@/components/HeaderComponent.vue'
+import HomePage from '@/views/HomePage.vue'
+import CheckBoxPage from '@/views/CheckBoxPage.vue'
+import KnobPage from '@/views/KnobPage.vue'
+import HeaderComponent from '@/views/HeaderPage.vue'
 
 const routes = [
   {
@@ -32,7 +32,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 

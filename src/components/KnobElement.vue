@@ -1,7 +1,7 @@
 <template>
   <div class="relative w-fit h-fit">
     <svg
-      :style="{ width: svgSize, height: svgSize }"
+      :style="{ width: svgSize + 'px', height: svgSize + 'px' }"
       class="-rotate-[90deg] rounded-full shadow-lg"
     >
       <circle
